@@ -1,0 +1,5 @@
+
+
+
+ação ( variavel === valor ? 'verdadeiro' : 'falso');
+	função de comparação
