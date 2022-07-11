@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<style>
+
+		* {
+			font-family: Arial, Helvetica, sans-serif;
+			background-color: black;
+			color: bisque;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<h1 class="header">Teste de Funções</h1>
+	
+	<script>
+
+		function primeiraFuncao() /* Criando uma funcao */ { 
+
+			console.log("Hello, World!"); /* Argumentos */
+
+		};
+
+		/* E necessario CHAMAR uma funcao depois de ter criado a mesma! */
+
+		primeiraFuncao();
+
+		/* Segundo teste */
+
+		function dizerNome (nome) { /* (nome) se trata de um exemplo de ARGUMENTO */
+			console.log("O nome é: " + nome) /* concatenamos para exibir o valor contido no argumento `nome` */
+			
+		};
+
+		dizerNome("Matheus");
+		dizerNome("Lucas");
+		dizerNome("Gilson");
+
+		var nomeDoBanco = prompt('Pode nos contar o nome de seu banco?');
+
+		function falarBanco() {
+			console.log('O nome do seu banco é ' + nomeDoBanco)
+			var header = document.getElementsByClassName('header')
+			document.write('<h1 class="header">'+ nomeDoBanco +'</h1>')
+			
+		};
+
+		falarBanco();
+	
+
+	</script>
+
+</body>
+</html>
