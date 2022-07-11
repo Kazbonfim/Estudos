@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(0, 0, 0)
+        }
+        
+        #container {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-around;
+            align-items: baseline;
+        }
+
+    </style>
+
+</head>
+<body>
+
+
+
+<div id='container' style="border: 1px solid none;">
+
+    <div style="color: white;"><h1>Curtidas: <span id="qTD">0</span></h1></div>
+    
+    <div>
+        <button type="button" onclick="cliqueBotao()">Gostei!💜</button>
+        <button type="button" onclick="verCurtidas(likes)">Ver curtidas</button>
+    </div>
+    
+
+</div>
+  
+    <script>
+
+        var likes = 0;
+
+        function cliqueBotao() {
+            likes = likes + 1;
+            console.log('Você deu uma 1+ curtida :)')
+            document.getElementById('qTD').innerHTML = likes;
+        };
+
+        function verCurtidas(likes) {
+            console.log(likes)
+        };
+
+    </script>
+
+</body>
+</html>
