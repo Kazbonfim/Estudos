@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Ternarios</title>
+
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(0, 0, 0);
+        }
+
+        #div {
+            border: 1px solid white;
+            width: auto;
+            height: 10rem;
+            padding: 10%;
+            display: flex;
+            flex-direction: row;
+            
+            
+        }
+
+        button {
+            max-height: 100px;
+            font-size: 22px;
+            color: rgb(0, 0, 0);
+            background-color: #ebedee;
+            border-color: #8995af;
+            border-radius: 5px;
+            align-content: space-around; 
+            margin: 15px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div id="div">
+        <button id="button" onclick="cliqueBotao()">Teste com operador ternário <span style="color:green;">MUITO FÁCIL</button><br>
+        <!-- <p>Teste com operador ternário <span style="color:green;">MUITO FÁCIL</span></p> -->
+    
+
+   
+        <button id="button" onclick="cliqueBotao2()">Teste com operador ternário <span style="color: blueviolet">MEDIANO</span></button><br>
+       <!--  <p >Teste com operador ternário <span style="color: blueviolet">MEDIANO</span></p> -->
+    
+    
+    
+        <button id="button" onclick="cliqueBotao3()">Teste com operador ternário <span style="color: brown;">COMPLEXO</span></button><br>
+        <!-- <p>Teste com operador ternário <span style="color: brown;">COMPLEXO</span></p> -->
+    </div>
+
+    <p style="color: white; font-size: 16px; text-align: center;">Operador Ternário: (VARIAVEL '>=/<=' CONDICAO '&&' VERDADEIRO ':' FALSO</p>
+
+    <script>
+
+        /* PRIMEIRO BOTAO */
+    var clique = 0;
+       
+       function cliqueBotao(clique) {
+            clique = 1;
+            (clique >= 1 ? console.log('Teste FACIL completo!') : 'Ops!')
+            alert('Como previsto, 1 é maior ou igual a 1.')
+       };
+
+       /* SEGUNDO BOTAO */
+    var clique2 = 0;
+
+       function cliqueBotao2(clique2) {
+            var clique2 = 2;
+            (clique2 >= 5 ? console.log('Ops!') : console.log('Teste MEDIANO completo!'))
+            alert('Como previsto, 2 é maior ou igual a 5.')
+       };
+    
+       /* TERCEIRO BOTAO */
+    var clique3 = 2;
+    var clique4 = 10;
+    var clique5 = 5;
+        
+       
+        function cliqueBotao3 (clique3, clique4) {
+            (clique3 >= 3 ? console.log('valor1') : clique4 <= 9 ? console.log('valor2') : clique5 === 5 ? console.log('Teste DIFICIL completo!') : console.log('Ops!'))
+            alert('Neste caso, checamos 3 variáveis em sequência que deveria falhar.')
+        }
+
+       /* function cliqueBotao3(clique3, clique4) {
+            (clique3 >=3 && clique4 <=9 ? console.log('Deu certo, mas não era pra dar') : console.log('Eureka!'))
+            https://stackoverflow.com/questions/45022445/js-ternary-functions-with-multiple-conditions
+            https://www.youtube.com/watch?v=YjEtiFi2k7g
+       };
+
+        var x=20;
+        var y = x <13 ? "Child" : x <20 ? "Teenage" : x <30 ? "Twenties" : "Old people";
+        console.log(y); */
+
+
+       /*  var nota = prompt('Digite a nota do aluno')
+        var faltas = prompt('Digite as faltas do aluno')
+
+        var media = 7
+        var faltas_maximas = 15
+
+        if (nota >= media && faltas <= faltas_maximas) {
+            document.write('Aprovado');
+        }
+
+        else {
+            document.write('Reprovado');
+        } */
+
+        /* Se a NOTA for maior que a condição, e as FALTAS forem menor que o permitido, teremos um resultado APROVADO.
+        O contrário deve ocorrer no caso de nenhuma das condições serem cumpridas 
+        var resultado = (nota => media && faltas <=  faltas_maximas) ? 'Aprovado' : 'Reprovado'; */
+            
+        /* var idade = prompt('Digite a idade')
+
+       if (idade >= 0 && idade < 15) {
+        console.log('Criança')
+       }
+
+       else if (idade >= 15 && idade < 30) {
+        
+        console.log('Adolescente')
+       }
+
+       else if (idade >= 30 && idade < 60) {
+        
+        console.log('Adulto');
+       }
+       
+       else if (idade >= 60) {
+        
+        console.log('Idoso');
+       } */
+
+       
+        
+        
+
+
+    </script>
+    
+    
+</body>
+</html>
