@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+
+        body {
+            background-color: black;
+        }
+
+        button {
+            padding: 15px;
+        }
+
+    </style>
+
+<body>
+
+    <!-- Teste para alternar estados entre Switches e em seguida verificar qual dos valores
+    se encontra ativo -->
+
+    <div>
+        <button onclick="switch1();">Mudar estado</button>
+        <!-- Depreciado
+        <button onclick="verEstado()">Verificar Switch ativo</button> -->
+
+    </div>
+
+    <script>
+
+        /* Criar uma variavel que alterne entre 'true' e 'false', e em seguida aplicar um Switch verificador para
+        validar o estado atual da mesma */
+
+        
+        var button1 = false;
+        
+
+       /*  function switch1() {
+            (button1 == true ? (button1 = false) : (button1 = true))
+        }; */
+       
+      function switch1() {
+        
+        if (button1 == true) {
+            button1 = false;
+            document.body.style.backgroundColor = 'black'
+            return console.log('Alterado para Falso')
+        } else {
+            button1 = true; 
+            document.body.style.backgroundColor = 'white'
+            return console.log('Alterado para Verdadeiro')
+        }; 
+        
+         /* Antes estava verificando uma variavel inexistente ('switch1'), acabei me perdendo entre os termos
+        mas enfim consegui reatribuir o valor de 'button1' conforme seu estado atual (true/false). Quase que como
+        um interruptor de lâmpada, que era o desafio */
+        
+    };    
+
+
+    /* Depreciado, acabei criando uma ação mais 'viva' */
+/*     function verEstado() {
+        switch (button1) {
+            case true :
+                document.body.style.backgroundColor = 'white';
+                console.log('Switch1 é Verdadeiro');
+                break
+            case false :
+                document.body.style.backgroundColor = 'black';
+                console.log('Switch 1 é Falso')
+                break
+        };
+    }; */
+        
+
+
+    </script>
+    
+</body>
+</html>
