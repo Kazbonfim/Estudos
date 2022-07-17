@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Manipulando Objetos, Parte I</title>
+</head>
+<body>
+
+    <script>
+        
+        function changeColor (alterarCor) {
+            document.getElementById('box').style.backgroundColor = alterarCor
+            console.log('Cor alterada com sucesso!')
+        };
+
+    </script>
+
+    <style>
+        body {
+            background-color: antiquewhite;
+            padding: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #box {
+            margin-top: 10px;
+            border: 1px solid grey; width: 300px; height: 300px;
+        }
+    </style>
+
+    <div>
+        
+        <h1>DOM - Manipulando Objetos, Parte I 🤓</h1><br>
+        <p>Nesse exemplo vamos usar Javascript para identificar elementos HTML onde podemos alterar seus estilos de forma que o usuário faça parte do processo - através de um evento 'onclick' contido dentro dos botões da página. O esquema todo é bem simples, e usando funções e parâmetros básicos podemos alcançar fácil esse objetivo.</p>
+        <button type="button" onclick="changeColor('#f55a42')">Vermelho</button>
+
+        <button type="button" onclick="changeColor('#b0e368')">Verde</button>
+
+        <button type="button" onclick="changeColor('#6899e3')">Azul</button>
+        <hr>
+    </div>
+
+    <div id="box"><!-- Objeto -->
+    <h1 style="padding: 7rem">Color</h1>
+    </div>
+
+
+ 
+</body>
+</html>
