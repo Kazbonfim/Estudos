@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN SCREEN - BETA V0.1</title>
+</head>
+<body>
+
+    <style>
+
+        * {
+            padding: 5px;
+        }
+
+        body {
+            background-color: rgb(75, 73, 78);
+            border: none;
+            width: 300px auto; 
+            height: 30rem;
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0.6);
+            border-radius: 35px;
+            color: #000000;
+            font-family: Arial, Helvetica, sans-serif;
+            
+            width: 200px auto;
+            height: 200px auto;
+            margin: 100px auto;
+            text-align: center;
+        }
+
+        input {
+            border-radius: 5px;
+            border: 1px solid transparent;
+            display: block;
+            margin: 10px auto;
+            width: 250px;
+            height: 30px;
+            text-align: center;
+        }
+
+        input:hover  {
+            border: 1px solid grey;
+        }
+
+        input:focus {
+            background-color: antiquewhite;
+        }
+
+
+    </style>
+
+    <!-- Pode customizar se achar necessário. O style está puro, contém apenas IDs para fins de busca dentro do script em JS. -->
+    <form action="" method="get">
+        <h1>Please, tell us your info.</h1>
+
+        <input type="text" placeholder="Login" id="login">
+        <input type="password" placeholder="Senha" id="senha">
+        <span></span>
+        <input type="submit" value="Enviar" onclick="return userCheck()">
+        <!-- Deixando o 'return' para tentar parar a ação Default de Submits dentro das páginas -->
+    </form>
+
+    <script>
+
+        /* Variaveis reserva, pra caso de erros de interpretação por algum motivo */
+        
+        var login = document.getElementById('login').value;
+        var password = document.getElementById('senha').value;
+
+        /* Função original deveria ser ternária, mas acabou sendo mais complicado refatorar 3 funções em uma. Essa fica apenas no 'submit', e valida após as duas entradas sem armazenar nas variaveis globais */
+        function userCheck () {
+
+            /* selecionamos os campos, antes de tudo, e pedimos seu valor para verificação com '.value' */
+            const login = document.getElementById('login').value;
+            const password = document.getElementById('senha').value;
+
+            /* O original deveria ser com ternários, mas o if/else resolve (são as mesmas coisas). Pedimos os dados selecionado anteriormente e que foram enviados pelo user, após isso, a checagem é feita, retornado 'true' ou 'false' com um alert. */
+
+            if (login == 'admin' && password == 'admin') {  // Caso queira mudar o login e senha, altere os valores 'admin'
+                event.preventDefault() // Esse evento vai previnir que a página tome a ação padrão de refresh, mantendo assim os valores salvos no console.log()
+                alert('Seja bem vindo novamente!')
+                return console.log(login), console.log(password)
+                window.location.replace('google.com')
+            } else {
+                event.preventDefault()  // Esse evento vai previnir que a página tome a ação padrão de refresh, mantendo assim os valores salvos no console.log()
+                alert('Dados incorretos!')
+                console.log('Dados incorretos! Verifique a linha 84 se os objetos de comparação são os mesmos que está tentando validar 😉')
+            };
+
+        } /* Fim :) Desafio completo! */
+
+      
+
+    </script>
+    
+</body>
+</html>
