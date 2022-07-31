@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 style="font-family: Arial, sans-serif;">Ola Mundo!</h1>
+
+    <script>
+
+        let condicao = 1
+
+            while (condicao <= 4) {
+                console.log('A condição ainda não foi cumprida!')
+
+                condicao += 1
+                console.log(`O valor atual é ${condicao}`)
+
+                    if (condicao === 5){
+
+                        // break < vai parar a operação quando a condição for cumprida
+                        continue
+                        
+                        // continue < pode causar conflitos, então MUITA atenção em situações de incremento, pois pode causar pane no navegador por múltiplas chamadas no console (sim, eu me lembro!)
+                    }
+
+                
+            }
+
+    </script>
+    
+</body>
+</html>

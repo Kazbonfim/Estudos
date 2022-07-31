@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos 'For'</title>
+</head>
+<body>
+
+<style>
+
+    * {
+        padding: 5px;
+    }
+
+    body {
+        background-color: black;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 30px;
+    }
+
+</style>  
+
+
+    <h1>Quantas maças temos?</h1>
+
+    <script>
+
+        /* for(variavel; condição; ação sobre a variavel) { bloco de código a ser executado } */
+        // <= MENOR ou igual
+        // >= MAIOR ou igual
+
+        for(let variavel = 0; variavel <= 11; variavel++) {
+
+            document.write(`Temos ${variavel} maçãs.<br/>`)
+            console.log(`Temos ${variavel} maçãs.`)
+
+            /* Break e Continue continuam valendo como parâmetros de continuidade para o laço 'for'. Inclusive, se lembre dos erros que acontecem com 'continue', visto que pode travar o PC todo por nada... */
+        };
+
+        /* Script para verificar pares e ímpares */
+
+        for(let i = 0; i <= 5; i++) {
+            const par = i % 2 === 0 ? 'Par' : 'Ímpar';
+            console.log(i.par)
+            document.write(`${i}<br/>`)
+        }
+
+        /* Percorrendo um Array usando 'For' */
+
+        const frutas = ['Maçãs', 'Pera', 'Uva', 'Tomate']
+
+        console.log(frutas.length) // Quantos [Índices] temos?
+
+        for(qtd = 0; qtd <= frutas.lengh; i++) {
+            console.log(`${qtd} de frutas`, frutas[qtd])
+
+        }
+
+
+    </script>
+    
+</body>
+</html>

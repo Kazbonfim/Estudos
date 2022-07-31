@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogue uma moeda!</title>
+</head>
+<body>
+
+    <style>
+
+        body {
+            padding: 50px;
+            margin-left: 50px;
+            background-color: #3d3c3c;
+            font-family: Arial, Helvetica, sans-serif;
+            color: whitesmoke;
+            display: flex;
+            flex-direction: column;
+        };
+
+        #container {
+            
+            border: 1px solid red;
+            width: 1.5rem;
+        };
+
+        #button {
+            width: 150px;
+            height: 150px;
+            justify-content: center;
+        };
+
+        /* Alinhar botão futuramente... */
+
+    </style>
+
+    <div>
+        <div id="container">
+            <h1>Jogue uma moeda!🧐</h1>
+            <p> A aplicação deve 'jogar uma moeda' toda vez que o usuário clicar. Além disso, devemos ter um contador para definir as pontuações feitas durante seu uso.</p>
+            <hr>
+        </div>
+    </div>
+
+    <div id="button">
+        <button onclick="coinFlip()">Jogar moeda!</button>
+    </div>
+    
+    <script>
+        function jogarMoeda(quantidade) {
+            var Objeto = {lembrar: [], caras: 0, coroas: 0};
+            for (var i = 0; i < quantidade; i++) {
+                if ((Math.chao((Math.random() *2) + 1)) === 1) {
+                    objeto.record.push('Cara!');
+                    objeto.caras++;
+                } else {
+                    objeto.record.push('Coroa!');
+                    objeto.coroas++;
+                }
+            }
+
+                return objeto;
+        }
+
+        function coinFlip(count) {
+	var obj = {record: [], headsCount: 0, tailsCount: 0};
+	for (var i = 0; i < count; i++) {
+		if ((Math.floor((Math.random() * 2) + 1)) === 1) {
+			obj.record.push('Heads');
+			obj.headsCount++;
+		} else {
+			obj.record.push('Tails');
+			obj.tailsCount++;
+		}
+	}
+	return obj
+    console.log(coinFlip)
+};
+
+console.log(coinFlip(2)); // returns an object properties headCount, tailsCount and a record that is 2 items long
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array - Pesquisa</title>
+</head>
+<body>
+
+    <script>
+
+
+        let lista_frutas = ['Banana', 'Morango', 'Uva', 'Abacate']
+
+        /* O método .indexOf é nativo e faz pesquisas de um objeto alvo dentro ou contido em arrays selecionados */
+
+        console.log(lista_frutas.indexOf('Uva'))
+        /* Dessa forma localizamos o index que contém o elemento 'Uva' dentro do Array selecionado */
+
+
+        /* Nesse exemplo, o script vai verificar se existe a dita fruta dentro do Array(). Caso exista exibimos uma mensagem, do contrário exibimos outra mensagem ao usuário. */
+
+        if (lista_frutas.indexOf('Morango') === -1) {
+            console.log('Não existem frutas com esse nome')
+        } else {
+            console.log('Encontramos sua fruta em ' + lista_frutas.indexOf('Morango'))
+        }
+ 
+
+
+
+    </script>    
+    
+</body>
+</html>

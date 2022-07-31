@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function - Callbacks</title> 
+</head>
+<body>
+
+    <script>
+
+        // Uma função de callback se trata de uma function() que internamente 'chama' outra função, fazendo assim o encapsulamento de ações em cadeia.
+
+       function funcao1 (callback) {
+        setTimeout(function() {
+            console.log('f1')
+        }, 3000)
+        
+       }
+
+       function funcao2 () {
+        setTimeout(function(){
+            console.log('f2')
+        }, 2500)
+       }
+
+       function random (min = 1000, max = 3000){
+        const num = Math.random() * (max - min) + min;
+            return Math.floor(num)
+       }
+
+       funcao1()
+       funcao2()
+       console.log(random())
+       
+
+    
+
+    </script>
+    
+</body>
+</html>

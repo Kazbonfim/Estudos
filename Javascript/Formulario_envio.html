@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTE - Envio de informações via formulário</title>
+</head>
+<body onload="focusForm()">
+
+    <style>
+
+        .div {
+            padding: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        };
+
+        .input {
+            background-color: yellow;
+            width: 300px;
+        };
+
+    </style>
+
+    <div class='div' style=" padding: 1.5rem; width: 300px; height: 300px; border: 1px solid grey; margin-top: 200px;">
+        <form action="" name="nomeForm">
+
+            <label for="name">Nome:</label>
+            <input type="text" name="userName" placeholder="Escreva seu nome" class="input"><br>
+            <hr style="width: 230px; visibility: hidden;">
+
+            <label for="password">Senha:</label>
+            <input type="password" name="userPass" placeholder="Digite sua senha" class="input"><br>
+            <hr style="width: 230px; visibility: hidden;">
+
+            <input type="submit" style="margin-left: 110px;">
+
+        </form>
+    </div>
+
+    <script>    
+
+        function focusForm(){
+            document.nomeForm.userName.focus()
+            document.nomeForm.userName.select()
+            console.log('Foco de escrita ativo!')
+        };
+
+    </script>
+
+    <!-- <form name="nameform">
+    Name:  <input type=text name=user size=10>
+    </form>  -->
+    
+</body>
+</html>

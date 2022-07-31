@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTE - Parametros de Função</title>
+</head>
+<body>
+
+    <style>
+        
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 5px;
+        }
+
+
+    </style>
+    
+    <script>
+
+/*         function valorReferencia (strVar, arrVar) {
+            strVar = 'String modificada'
+            arrVar[0] = 'Array modificado'
+        };
+
+        var texto = 'Valor original';
+        var vetor = ['Valor original'];
+
+document.write('String ANTES de chamar a função: ' + texto + '<br/>');
+document.write('Array ANTES de chamar a função: ' + vetor[0] + '<br/>');
+
+        // chamando a função:
+
+        valorReferencia(texto, vetor);
+        document.write('String DEPOIS de chamar a função: ' + texto + '<br/>');
+        document.write('Array DEPOIS de chamar a função: ' + vetor[0] + '<br/>'); */
+
+
+        /* Usando parametros dentro de uma 'function' para determinar os valores de nome e sobrenome, contidos nas variáveis 'a' e 'b'. */
+        function mensagem (nome, sobrenome) {
+            alert('Bem-vindo, ' + nome + ' ' + sobrenome);
+        }
+
+        /* Definimos as variáveis e como elas devem se comportar durante o ínicio */
+        var a = prompt('Escreva seu primeiro nome') // vai pedir seu nome
+        var b = prompt('Escreva seu sobrenome') // e seu sobrenome
+
+        mensagem(a, b)// em seguida, invocamos as mesmas variaveis, DENTRO da function previamente criada. Dessa forma, o script entenderá que se tratam respectivamente de 'nome' e 'sobrenome'.
+
+
+        
+
+    </script>
+
+</body>
+</html>

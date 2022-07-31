@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Desafio de Document Object Model, parte II</title>
+</head>
+<body>
+
+    <style>
+
+        body {
+            padding: 1.5rem;
+            background-color: #303133;
+            font-family: Arial, Helvetica, sans-serif; color: white;
+        }
+
+        #input {
+            height: 500px;
+            padding: 0.5rem; 
+        }
+
+        #button {
+            /* border: 1px solid red; */
+        }
+
+    </style>
+
+    <script>
+
+        function lightButton (lightButton){
+            document.getElementById('button').style.backgroundColor = lightButton;
+        };
+
+
+        function checkLenght (){
+            var validaCampo = document.getElementById('button').value 
+            /* Verificar se o campo está preenchido conforme esperado, +3 letras. */
+                if (validaCampo.length <= 3 ){
+                    document.getElementById('button').style.backgroundColor = '#d47d66'
+                } else {
+                    document.getElementById('button').style.backgroundColor = '#9ed16b'
+                };
+        };
+
+        function checkSub (){
+            alert('Enviado!')
+        }
+
+    </script>
+
+    <h1>DOM - Desafio de Document Object Model, parte II 😎</h1>
+    <p>1) Crie um campo <b>< input type="text" ></b> e aplique os seguintes controles com base nos 
+        eventos abaixo:
+        <p>• No evento de foco modifique o background do input para amarelo.</p>
+        <p>• Quando o campo perder o foco, recupere o seu respectivo valor e--</p>
+        Caso o conteúdo contido no campo tenha menos de 3 caracteres o mesmo 
+        deve ter seu background alterado para vermelho.
+        o Caso o conteúdo contido no campo tenha 3 caracteres ou mais o background 
+        deve ser alterado para verde</p>
+        <hr>
+
+    <div id="input">
+        <input id="button" type="text" placeholder="escreva seu nome" onfocus="lightButton('#ebe865')" onblur="checkLenght()" value="var Submit">
+        <button type="submit" onclick="checkSub()">OK</button>
+        <!-- <br>
+        <br>
+        <input type="password" placeholder="escolha uma senha" onfocus="lightButton('#ebe865')" id="button"> -->
+    </div>
+    
+</body>
+</html>
