@@ -53,3 +53,5 @@ pokeBag.push(new Pokemon('Blastoise', 'Agua', 'Torrente!'))
 pokeBag.push(new Pokemon('Gengar', 'Fantasma', 'Maldição!'))
 // Verificando mochila...
 console.table(pokeBag)
+
+
