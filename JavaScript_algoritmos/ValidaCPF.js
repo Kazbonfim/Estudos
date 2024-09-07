@@ -78,3 +78,4 @@ if (cpf.valida()) {
 } else {
   console.log('Cpf inválido');
 }
+// End!

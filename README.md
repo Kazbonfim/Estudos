@@ -8,5 +8,6 @@ Minhas 'especializações' no momento são de HTML, CSS3 e Javascript (esse últ
 Não sou um profissional, mas um dia serei. Não sei de tudo, mas estou disposto á aprender.
 “Tudo o que temos de decidir é o que fazer com o tempo que nos é dado.” 🧙🧙🧙
 
+
 ![image](https://user-images.githubusercontent.com/78633256/178187371-c9ea0bdf-6dc4-492b-9f95-dcfb7e7beec0.png)
 
