@@ -1,0 +1,29 @@
+* {
+    background-color: #000;
+    color: white;
+    padding: 0.1em;
+    margin: 0.5em;
+    font-family: 'Roboto', Arial,sans-serif;
+    /* font-family: 'Assistant', sans-serif; */
+}
+
+input[type="radio"] {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.cor {
+    background-color: #000;
+}
+
+.cor-vermelho {
+    background-color: red;
+}
+
+.cor-verde {
+    background-color: green;
+}
+
+.cor-azul {
+    background-color: blue;
+}
